@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.stage.*?>
+
+<Stage xmlns="http://javafx.com/javafx/11.0.14-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.requestVacationController">
+   <scene>
+      <Scene>
+         <AnchorPane prefHeight="560.0" prefWidth="815.0">
+            <children>
+               <ImageView fitHeight="560.0" fitWidth="815.0" layoutY="-1.0" pickOnBounds="true" preserveRatio="true">
+                  <image>
+                     <Image url="@photos/background.png" />
+                  </image>
+               </ImageView>
+               <TextField fx:id="found" layoutX="246.0" layoutY="18.0" prefHeight="26.0" prefWidth="323.0" promptText="   Search" style="-fx-border-radius: 100; -fx-background-radius: 100;" />
+               <Label layoutX="42.0" layoutY="13.0" text="EMS" textFill="#1aaba6">
+                  <font>
+                     <Font name="Berlin Sans FB Demi Bold" size="30.0" />
+                  </font>
+               </Label>
+               <ImageView fitHeight="34.0" fitWidth="30.0" layoutX="26.0" layoutY="16.0" pickOnBounds="true" preserveRatio="true">
+                  <image>
+                     <Image url="@photos/tie.png" />
+                  </image>
+               </ImageView>
+               <ImageView fitHeight="289.0" fitWidth="727.0" layoutX="298.0" layoutY="167.0" pickOnBounds="true" preserveRatio="true">
+                  <image>
+                     <Image url="@photos/finalcAl.png" />
+                  </image>
+               </ImageView>
+               <DatePicker fx:id="startDate" accessibleText="startingDateCAL" layoutX="484.0" layoutY="311.0" prefHeight="26.0" prefWidth="154.0" />
+               <DatePicker fx:id="endDate" accessibleText="endingDateCAL" layoutX="485.0" layoutY="351.0" prefHeight="26.0" prefWidth="152.0" />
+               <Label layoutX="373.0" layoutY="309.0" prefHeight="31.0" prefWidth="104.0" style="-fx-background-color: white; -fx-background-radius: 7;" text="    Starting Date" textFill="#1aaba6" />
+               <Label layoutX="376.0" layoutY="349.0" prefHeight="31.0" prefWidth="103.0" style="-fx-background-color: white; -fx-background-radius: 7;" text="    Ending Date" textFill="#1aaba6" />
+               <Button accessibleText="requestB" layoutX="449.0" layoutY="477.0" mnemonicParsing="false" onAction="#Request" prefHeight="27.0" prefWidth="124.0" style="-fx-background-color: #1aaba6; -fx-border-color: #1aaba6; -fx-border-radius: 9; -fx-background-radius: 9;" text="Request" textFill="WHITE" />
+               <CheckBox fx:id="emergency" accessibleText="emergencyCB" layoutX="618.0" layoutY="481.0" mnemonicParsing="false" text="Emergency" textFill="#1aaba6" />
+               <ImageView fitHeight="25.0" fitWidth="25.0" layoutX="67.0" layoutY="252.0" pickOnBounds="true" preserveRatio="true">
+                  <image>
+                     <Image url="@photos/user.png" />
+                  </image>
+               </ImageView>
+               <ImageView fitHeight="25.0" fitWidth="25.0" layoutX="67.0" layoutY="407.0" pickOnBounds="true" preserveRatio="true">
+                  <image>
+                     <Image url="@photos/log-out.png" />
+                  </image>
+               </ImageView>
+               <ImageView fitHeight="25.0" fitWidth="25.0" layoutX="67.0" layoutY="328.0" pickOnBounds="true" preserveRatio="true">
+                  <image>
+                     <Image url="@photos/request.png" />
+                  </image>
+               </ImageView>
+               <ImageView fitHeight="25.0" fitWidth="25.0" layoutX="67.0" layoutY="177.0" pickOnBounds="true" preserveRatio="true">
+                  <image>
+                     <Image url="@photos/check.png" />
+                  </image>
+               </ImageView>
+               <Hyperlink accessibleText="showProHL" layoutX="106.0" layoutY="251.0" onAction="#showProfile" text="Show My Profile" textFill="#1b1a1a" />
+               <Hyperlink accessibleText="checkInHL" layoutX="106.0" layoutY="177.0" onAction="#CheckInOut" text="Check In\Out" textFill="#151515" />
+               <Hyperlink accessibleText="LogOutHL" layoutX="106.0" layoutY="406.0" onAction="#LogOut" text="Log Out" textFill="#181818" />
+               <Hyperlink accessibleText="reqVacHL" layoutX="104.0" layoutY="329.0" onAction="#reqVac" text="Request Vacation" textFill="#131212" />
+               <ImageView fx:id="profilePhoto" fitHeight="40.0" fitWidth="42.0" layoutX="766.0" layoutY="8.0" onMouseClicked="#showProfile" pickOnBounds="true" preserveRatio="true" />
+               <Button layoutX="754.0" layoutY="12.0" minWidth="43.0" mnemonicParsing="false" onAction="#showProfile" prefHeight="38.0" prefWidth="43.0" scaleShape="false" style="-fx-background-radius: 100; -fx-background-color: transparent;" />
+               <Button fx:id="search" layoutX="515.0" layoutY="18.0" mnemonicParsing="false" onAction="#Esearch" text="search">
+                  <opaqueInsets>
+                     <Insets />
+                  </opaqueInsets>
+               </Button>
+               <Label layoutX="363.0" layoutY="114.0" prefHeight="27.0" prefWidth="200.0" text="Remaining Vacation Days : " textFill="#1aaba6">
+                  <font>
+                     <Font name="System Bold" size="14.0" />
+                  </font>
+               </Label>
+               <Label fx:id="rem" layoutX="558.0" layoutY="116.0" prefHeight="22.0" prefWidth="79.0" text="Label" />
+            </children></AnchorPane>
+      </Scene>
+   </scene>
+</Stage>

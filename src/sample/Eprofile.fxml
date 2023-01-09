@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.stage.*?>
+
+<Stage xmlns="http://javafx.com/javafx/11.0.14-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.EprofileController">
+    <scene>
+        <Scene>
+            <AnchorPane prefHeight="560.0" prefWidth="815.0">
+            <children>
+               <ImageView fitHeight="560.0" fitWidth="815.0" layoutY="-9.0" pickOnBounds="true" preserveRatio="true">
+                  <image>
+                     <Image url="@photos/table2.png" />
+                  </image>
+               </ImageView>
+               <ImageView fitHeight="308.0" fitWidth="504.0" layoutX="274.0" layoutY="182.0" pickOnBounds="true" preserveRatio="true">
+                  <image>
+                     <Image url="@photos/bg2.png" />
+                  </image>
+               </ImageView>
+               <ImageView fx:id="image" fitHeight="102.0" fitWidth="99.0" layoutX="303.0" layoutY="165.0" pickOnBounds="true" preserveRatio="true">
+                  <image>
+                     <Image url="@photos/user.png" />
+                  </image>
+               </ImageView>
+               <Label accessibleText="email" layoutX="582.0" layoutY="361.0" text="Email:" />
+               <Label accessibleText="id" layoutX="353.0" layoutY="360.0" text="ID Number:" />
+               <Label accessibleText="salary" layoutX="581.0" layoutY="395.0" text="Salary:" />
+               <Label accessibleText="birthday" layoutX="353.0" layoutY="395.0" text="Birthday:" />
+               <Label accessibleText="adress" layoutX="579.0" layoutY="323.0" text="Adress:" />
+               <Label fx:id="Eposition" accessibleText="positionL" layoutX="415.0" layoutY="172.0" text="POSITION">
+                  <font>
+                     <Font name="System Bold" size="12.0" />
+                  </font>
+               </Label>
+               <Label accessibleText="phoneNum" layoutX="353.0" layoutY="323.0" text="Phone Number:" />
+               <Label fx:id="Ename" accessibleText="NameL" layoutX="416.0" layoutY="197.0" prefHeight="18.0" prefWidth="139.0" text="Name" />
+               <Label fx:id="Esalary" accessibleText="salaryL" layoutX="631.0" layoutY="395.0" text="salary" textFill="#1aaba6" />
+               <Label fx:id="Eadress" accessibleText="addressL" layoutX="631.0" layoutY="323.0" text="adress" textFill="#1aaba6" />
+               <Label fx:id="Eemail" accessibleText="emailL" layoutX="631.0" layoutY="361.0" text="email" textFill="#1aaba6" />
+               <Label fx:id="Ebirthday" accessibleText="birthdayL" layoutX="444.0" layoutY="395.0" text="birthday" textFill="#1aaba6" />
+               <Label fx:id="Ephone" accessibleText="phoneNumL" layoutX="444.0" layoutY="323.0" text="phone" textFill="#1aaba6" />
+               <ImageView fitHeight="34.0" fitWidth="30.0" layoutX="23.0" layoutY="15.0" pickOnBounds="true" preserveRatio="true">
+                  <image>
+                     <Image url="@photos/tie.png" />
+                  </image>
+               </ImageView>
+               <ImageView fitHeight="25.0" fitWidth="25.0" layoutX="62.0" layoutY="311.0" pickOnBounds="true" preserveRatio="true">
+                  <image>
+                     <Image url="@photos/log-out.png" />
+                  </image>
+               </ImageView>
+               <ImageView fitHeight="45.0" fitWidth="41.0" layoutX="62.0" layoutY="215.0" pickOnBounds="true" preserveRatio="true">
+                  <image>
+                     <Image url="@photos/home.png" />
+                  </image>
+               </ImageView>
+               <Hyperlink fx:id="check" accessibleText="checkInHL" layoutX="114.0" layoutY="224.0" onAction="#homei" text="Home" textFill="#151515" />
+               <Hyperlink fx:id="logout" accessibleText="LogOutHL" layoutX="108.0" layoutY="312.0" onAction="#logout" text="Log Out" textFill="#181818" />
+               <Label fx:id="homei" layoutX="38.0" layoutY="12.0" onMouseDragEntered="#homei" text="EMS" textFill="#1aaba6">
+                  <font>
+                     <Font name="Berlin Sans FB Demi Bold" size="30.0" />
+                  </font>
+               </Label>
+               <Label fx:id="Etmpid" layoutX="447.0" layoutY="361.0" text="id" textFill="#1aaba6" />
+               <ImageView fx:id="profilePhoto" fitHeight="40.0" fitWidth="42.0" layoutX="760.0" layoutY="4.0" onMouseClicked="#profile" pickOnBounds="true" preserveRatio="true" />
+               <Button layoutX="748.0" layoutY="8.0" minWidth="43.0" mnemonicParsing="false" onAction="#profile" prefHeight="38.0" prefWidth="43.0" scaleShape="false" style="-fx-background-radius: 100; -fx-background-color: transparent;" />
+               <TextField fx:id="companyName" editable="false" layoutX="328.0" layoutY="14.0" promptText="company name" style="-fx-background-color: transparent; -fx-border-color: transparent; -fx-alignment: center;">
+                  <font>
+                     <Font size="14.0" />
+                  </font>
+               </TextField>
+            </children></AnchorPane>
+        </Scene>
+    </scene>
+</Stage>
